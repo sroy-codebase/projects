@@ -1,3 +1,239 @@
-vibematchAI/index.html 
-Hosted in : https://app.netlify.com/projects/vibematch-ai/overview 
-Codebase in : Git
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VibeMatch — AI-Powered Compatibility Matching App</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0f1020;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    .hero {
+      padding: 70px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #6a11cb, #2575fc, #ff4ecd);
+    }
+
+    .hero h1 {
+      font-size: 44px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 850px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 24px;
+      margin: 8px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #ffffff;
+      color: #202040;
+    }
+
+    .btn-dark {
+      background: #16162f;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 45px 20px;
+    }
+
+    .section {
+      background: #17172f;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    }
+
+    h2 {
+      color: #ff7bd5;
+      margin-top: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: #222244;
+      padding: 22px;
+      border-radius: 15px;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .tag {
+      display: inline-block;
+      background: #2f2f5f;
+      color: #ffffff;
+      padding: 8px 13px;
+      border-radius: 20px;
+      margin: 5px;
+      font-size: 14px;
+    }
+
+    .workflow li {
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #090914;
+      color: #cccccc;
+    }
+
+    a {
+      color: #9ddcff;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero">
+    <h1>VibeMatch</h1>
+    <p>AI-Powered Compatibility Matching for Meaningful Human Connections</p>
+
+    <a class="btn" href="https://vibematch-ai.netlify.app" target="_blank">View Live App</a>
+    <a class="btn btn-dark" href="https://github.com/sroy-codebase/vibematch-mvp" target="_blank">View GitHub Code</a>
+    <a class="btn btn-dark" href="https://sroy-codebase.github.io/portfolio.datascience/" target="_blank">Back to Portfolio</a>
+  </section>
+
+  <main class="container">
+
+    <section class="section">
+      <h2>Project Overview</h2>
+      <p>
+        VibeMatch is an AI-inspired matchmaking web application created during the Codex Challenge
+        and prepared for AI Showcase submission. The goal of the project is to move beyond the
+        conventional swipe-based dating experience and create a more human-centered way for people
+        to discover compatible dating, friendship, and activity-based connections.
+      </p>
+      <p>
+        Instead of focusing only on appearance or surface-level choices, VibeMatch analyzes interests,
+        lifestyle preferences, personality indicators, relationship goals, communication preferences,
+        safety comfort, and compatibility signals to rank potential matches.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Problem Statement</h2>
+      <p>
+        Many dating and social discovery apps focus heavily on swiping, quick reactions, and visual-first
+        decisions. This can make the experience feel shallow, overwhelming, and less trustworthy.
+        VibeMatch explores a different approach by helping users understand why a match may be meaningful
+        before starting a conversation.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>App Workflow</h2>
+      <ol class="workflow">
+        <li>User visits the VibeMatch web app.</li>
+        <li>User creates a profile with interests, lifestyle, personality, and relationship goals.</li>
+        <li>The app compares the user profile with multiple sample match profiles.</li>
+        <li>Compatibility scoring logic analyzes shared interests, goals, lifestyle alignment, and communication preferences.</li>
+        <li>Potential matches are ranked based on compatibility score.</li>
+        <li>The app displays top match recommendations with AI-style explanations.</li>
+        <li>Users can review match reasons, suggested first messages, and safer first-meeting ideas.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Key Features</h2>
+      <div class="grid">
+        <div class="card">Compatibility scoring</div>
+        <div class="card">Match ranking logic</div>
+        <div class="card">Profile and preference workflow</div>
+        <div class="card">AI-style match explanation</div>
+        <div class="card">Suggested first messages</div>
+        <div class="card">Safety-first meeting suggestions</div>
+        <div class="card">Responsive mobile-friendly UI</div>
+        <div class="card">Live deployment using Netlify</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Development and Deployment Workflow</h2>
+      <ol class="workflow">
+        <li>Concept designed for the Codex Challenge.</li>
+        <li>Application generated and improved using Codex as an AI coding assistant.</li>
+        <li>React + Vite project created for fast frontend development.</li>
+        <li>Local development and build validation completed in the Codex development environment.</li>
+        <li>Code versioned and pushed to GitHub.</li>
+        <li>Application deployed and hosted live using Netlify.</li>
+        <li>Final project prepared for Handshake AI Showcase submission.</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>Tech Stack</h2>
+      <span class="tag">Codex</span>
+      <span class="tag">React</span>
+      <span class="tag">Vite</span>
+      <span class="tag">JavaScript</span>
+      <span class="tag">CSS</span>
+      <span class="tag">Git</span>
+      <span class="tag">GitHub</span>
+      <span class="tag">Netlify</span>
+    </section>
+
+    <section class="section">
+      <h2>Ethical AI Considerations</h2>
+      <p>
+        VibeMatch is designed with an ethical AI mindset. The app focuses on transparency, respectful
+        matching, user trust, and safety-first interaction. The matching logic is intended to support
+        human decision-making, not replace personal judgment. Future versions should continue to respect
+        user consent, privacy, fairness, and explainability.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Future Enhancements</h2>
+      <div class="grid">
+        <div class="card">Live icebreaker games to build trust</div>
+        <div class="card">AI-assisted conversation prompts</div>
+        <div class="card">Food or activity-based date recommendations</div>
+        <div class="card">Trust-building workflows</div>
+        <div class="card">User verification and safety controls</div>
+        <div class="card">Business integrations for events, food, and local activities</div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Created by Soumen Roy | Built with Codex, React, Vite, GitHub, and Netlify</p>
+  </footer>
+
+</body>
+</html>
